@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+/* Custom styles */
+.bg-purple-900 {
+  background-color: #4a148c;
+}
+
+.bg-purple-600 {
+  background-color: #8e24aa;
+}
+
+.bg-purple-700 {
+  background-color: #7b1fa2;
+}
+
+.text-purple-500 {
+  color: #9c27b0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Playfair Display", serif;
+}
+
