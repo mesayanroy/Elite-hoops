@@ -1,5 +1,5 @@
-import Link from "next/link"
-import Image from "next/image"
+import Link from "next/link";
+import Image from "next/image";
 
 const products = [
   { id: 1, name: "Elite Pro Basketball", price: 59.99, category: "Basketballs" },
@@ -14,7 +14,7 @@ const products = [
   { id: 10, name: "Court Marking Tape", price: 14.99, category: "Accessories" },
   { id: 11, name: "Referee Whistle Set", price: 24.99, category: "Accessories" },
   { id: 12, name: "Youth Basketball", price: 29.99, category: "Basketballs" },
-]
+];
 
 export default function CategoriesPage() {
   return (
@@ -24,7 +24,7 @@ export default function CategoriesPage() {
         {products.map((product) => (
           <div key={product.id} className="bg-purple-900 p-4 rounded-lg shadow-lg">
             <Image
-              src={`/public/${product.id}.png`}
+              src={`/${product.id}.png`} // Fixed path
               alt={product.name}
               width={200}
               height={200}
@@ -40,6 +40,5 @@ export default function CategoriesPage() {
         ))}
       </div>
     </div>
-  )
+  );
 }
-
